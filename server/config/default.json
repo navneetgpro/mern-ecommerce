@@ -1,4 +1,4 @@
 {
-    "mongoURI":"mongodb+srv://diymarket:diymarket@cluster0.v78jbsp.mongodb.net/diymarket?retryWrites=true&w=majority",
+    "mongoURI":"",
     "jwtSecret":"mysecrettoken"
 }
