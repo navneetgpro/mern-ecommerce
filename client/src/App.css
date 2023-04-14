@@ -1,0 +1,92 @@
+.nav-ff{
+  background: #abd0f7;
+  border-radius: 10px;
+  padding: 0px 15px;
+}
+
+.mycart{
+  border-left: 5px double #583bff;
+  margin-left: 10px;
+}
+
+.cart-items{
+  background: #c669ef !important;
+}
+
+.cartlogosvg{
+  margin-left: 5px;
+}
+
+.btn-primary{
+  background: #3095ff !important;
+}
+
+/* search button */
+.height{
+  height: 100vh;
+ }
+ 
+
+ .search{
+ position: relative;
+ box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+   
+ }
+
+ .search input{
+
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+
+
+ }
+
+
+ .search input:focus{
+
+  box-shadow: none;
+  border: 2px solid blue;
+
+
+ }
+
+ .search .fa-search{
+
+  position: absolute;
+  top: 17px;
+  left: 16px;
+
+ }
+
+ .search button{
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: blue;
+
+ }
+
+ .banner-image{
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ }
+
+/* image hover effect */
+.img-wrapper {
+  overflow: hidden;
+}
+
+img.hover-zoom {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+img.hover-zoom:hover {
+  transform: scale(1.25);
+}
