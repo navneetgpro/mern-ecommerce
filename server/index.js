@@ -1,4 +1,5 @@
 const express = require('express');
+const config = require('config');
 const connectDb = require('./config/server');
 const cors = require('cors');
 const app = express();
@@ -12,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // cors allow
 app.use(cors({
-  origin:"http://localhost:5173"
+  origin:config.get('frontend')
 }));
 
 // access all static images
