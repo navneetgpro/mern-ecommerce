@@ -13,9 +13,11 @@ import { loadUser } from './actions/auth'
 import setAuthToken from './utils/setAuthToken'
 // Redux
 import { Provider } from "react-redux"
-import store from "./store"
+import { PersistGate } from 'redux-persist/integration/react';
+import {store,persistor} from "./store"
 // private route
 import PrivateRoute from './components/routing/PrivateRoute'
+
 
 if(localStorage.token) {
   setAuthToken(localStorage.setAuthToken);
@@ -29,6 +31,7 @@ function App() {
   return (
     <>
     <Provider store={store}>
+    <PersistGate persistor={persistor}>
       <Header />
       <Alert />
       <Routes>
@@ -42,6 +45,7 @@ function App() {
         <Route path="*" element={<Notfound />}/>
       </Routes>
       <Footer />
+      </PersistGate>
     </Provider>
     </>
   );
