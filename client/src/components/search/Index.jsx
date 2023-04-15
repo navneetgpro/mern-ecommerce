@@ -16,9 +16,9 @@ const Index = ({products,searchProduct}) => {
 
   useEffect(() => {
     searchProduct(q);
-    setShowData(true);
   }, []);
   useEffect(() => {
+    if(products.length>0) setShowData(true);
     setProductData(products);
   }, [products]);
   return (
